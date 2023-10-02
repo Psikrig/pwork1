@@ -1,6 +1,7 @@
 import math
 p = 1
 while (p == 1):
+    try:
     print(
         "выберите действие: " 
 "\r\n1. Сложить 2 числа",
@@ -62,6 +63,7 @@ while (p == 1):
     elif x == 7:
           print("введите число.")
           a = int(input())
+        if a < 0: print("error") break
           d = math.factorial(a)
           print("Ответ:", d)
     elif x == 8:
@@ -83,3 +85,4 @@ while (p == 1):
          break
     else:
           print("error")
+except: print("error")
